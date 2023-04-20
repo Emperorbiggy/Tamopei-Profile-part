@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <link rel="stylesheet" href="create.css">
+          <link rel="stylesheet" href="color.css">
+          <link rel="stylesheet" href="fontsawesome/css/all.css">
+
+</head>
+<body>
+  <section>
+
+    <div class="head-content-c">
+           <button class="btn-c active" id="buyc">BUY</button>
+           <button class="btn-c" id="buyc1">SELL</button>
+    </div>  
+<!--  
+    <main id="" style="display: none;">
+           <div class="content-c">
+                     <div class="currency-c">
+                               <div class="assest-c">
+                                         <div class="labe1-c">
+                                                   <label for="">currency:</label> &nbsp;&nbsp;&nbsp;
+                                                   <select>
+                                                     <option value="jyguyg">USD</option>
+                                                     <option value="jyguyg">NGN</option>
+                                                     <option value="jyguyg">GPB</option>
+                                                     <option value="jyguyg">GHC</option>
+                                                     <option value="jyguyg">ZAR</option>
+                                                   </select>
+                                                 </div>
+                               </div>
+                               <p>To Buy</p>
+                               <div class="assest1-c">
+                                         <div class="labe1-c">
+                                                   <label for="">Fiat:</label> &nbsp;&nbsp;&nbsp;
+                                                   <select>
+                                                     <option value="jyguyg">USD</option>
+                                                     <option value="jyguyg">NGN</option>
+                                                     <option value="jyguyg">GPB</option>
+                                                     <option value="jyguyg">GHC</option>
+                                                     <option value="jyguyg">ZAR</option>
+                                                   </select>
+                                                 </div>
+                               </div>
+                     </div>
+                     <div class="value-c">
+                               <div class="price-c">
+                                         <label for="">Your Rate</label> 
+                                         <input type="tel">
+                               </div>
+                               <div class="rate-c">
+                                         <label for="">Market Rate</label> 
+                                         <input type="tel" value="$1/&#x20A6;750">
+                               </div>
+                     </div>
+                     <div class="trade-ammount-c">
+ 
+                               <div class="ammount-c">
+                                         <label for="">Total Amount To Buy</label> 
+                                         <input type="tel" name="" id="" placeholder="$">
+                               </div>
+                               <div class="swap-c">
+                                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                               </div>
+                               <div class="ammount-c" style="margin-right: -2rem;">
+                                         <label for="">Total Amount To Receive</label> 
+                                         <input type="tel" name="" id="" placeholder="&#x20A6;">
+                               </div>
+                     </div>
+                     <div class="order-limit-c">
+                               <div class="lowest-order-c">
+                                         <input type="tel" placeholder="Lowest Limit">
+                               </div>
+                               <div class="swap-c">
+                                         <i class="fa-solid fa-shuffle"></i>
+                               </div>
+                               <div class="highest-order-c">
+                                         <input type="tel" placeholder="Highest Limit">
+                               </div>
+                     </div>
+                     <div class="payment-method-c">
+                               <button class="btn-c active" id="dropbtn">Wallet</button>
+                               <button class="btn-c " id="dropbtn1">Other Method</button>
+                     </div>
+                     <div class="wallet-list-c1" id="wallet1">
+                           <div class="symbol-c">
+                               <p>NGN </p>  <span> &#x20A6;</span> <input type="checkbox" name="" id="">
+                           </div> 
+                           <div class="symbol-c"> <p>USD</p> <span>  $</span><input type="checkbox" name="" id=""></div>   
+                           <div class="symbol-c"><p>EURO</p> <span>  &#x20AC;</span><input type="checkbox" name="" id=""></div>   
+                           <div class="symbol-c"> <p>ZAR</p> <span>R</span><input type="checkbox" name="" id=""></div>   
+                           <div class="symbol-c"><p>GHC</p> <span>  &#8373;</span><input type="checkbox" name="" id=""></div>   
+                          
+                        
+                               
+                                
+                     </div>
+                     <div class="wallet-list1-c" id="wallet2">
+                           <div class="symbol-c">
+                               <p>BANK </p> <input type="checkbox" name="" id="">
+                           </div> 
+                           <div class="symbol-c"> <p>CHIPPER CASH</p><input type="checkbox" name="" id=""></div>   
+                           <div class="symbol-c"><p>MOBILE MONEY</p><input type="checkbox" name="" id=""></div>   
+                           <div class="symbol-c"> <p>PI NETWORK</p><input type="checkbox" name="" id=""></div>   
+                           <div class="symbol-c"><p>PAYPAL</p> <input type="checkbox" name="" id=""></div>   
+                           <div class="symbol-c"><p>SKRILL</p> <input type="checkbox" name="" id=""></div>   
+                           <div class="symbol-c"><p>APPLEPAY</p> <input type="checkbox" name="" id=""></div>   
+                           <div class="symbol-c"><p>CASH APP</p> <input type="checkbox" name="" id=""></div>   
+                           <div class="symbol-c"><p>GOGGLEPAY</p> <input type="checkbox" name="" id=""></div>   
+                          
+                        
+                               
+                                
+                     </div>
+                     <div class="post-btn">
+                       <button class="btn-1">POST</button>
+ 
+                     </div>
+ 
+           </div>
+    </main> -->
+    <main id="">
+      
+           <div class="content-c" id="buy">
+                     <div class="currency-c">
+                               <div class="assest-c">
+                                         <div class="labe1-c">
+                                                   <label for="">currency:</label> &nbsp;&nbsp;&nbsp;
+                                                   <select>
+                                                     <option value="jyguyg">USD</option>
+                                                     <option value="jyguyg">NGN</option>
+                                                     <option value="jyguyg">GPB</option>
+                                                     <option value="jyguyg">GHC</option>
+                                                     <option value="jyguyg">ZAR</option>
+                                                   </select>
+                                                 </div>
+                               </div>
+                               <p>To Buy</p>
+                               <div class="assest1-c">
+                                         <div class="labe1-c">
+                                                   <label for="">Fiat:</label> &nbsp;&nbsp;&nbsp;
+                                                   <select>
+                                                     <option value="jyguyg">USD</option>
+                                                     <option value="jyguyg">NGN</option>
+                                                     <option value="jyguyg">GPB</option>
+                                                     <option value="jyguyg">GHC</option>
+                                                     <option value="jyguyg">ZAR</option>
+                                                   </select>
+                                                 </div>
+                               </div>
+                     </div>
+                     <div class="value-c">
+                               <div class="price-c">
+                                         <label for="">Your Rate</label> 
+                                         <input type="tel">
+                               </div>
+                               <div class="rate-c">
+                                         <label for="">Market Rate</label> 
+                                         <input type="tel" value="$1/&#x20A6;750">
+                               </div>
+                     </div>
+                     <div class="trade-ammount-c">
+ 
+                               <div class="ammount-c">
+                                         <label for="">Total Amount To Buy</label> 
+                                         <input type="tel" name="" id="" placeholder="$">
+                               </div>
+                               <div class="swap-c">
+                                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                               </div>
+                               <div class="ammount-c" style="margin-right: -2rem;">
+                                         <label for="">Total Amount To Receive</label> 
+                                         <input type="tel" name="" id="" placeholder="&#x20A6;">
+                               </div>
+                     </div>
+                     <div class="order-limit-c">
+                               <div class="lowest-order-c">
+                                         <input type="tel" placeholder="Lowest Limit">
+                               </div>
+                               <div class="swap-c">
+                                         <i class="fa-solid fa-shuffle"></i>
+                               </div>
+                               <div class="highest-order-c">
+                                         <input type="tel" placeholder="Highest Limit">
+                               </div>
+                     </div>
+                     <div class="payment-method-c">
+                               <button class="btn-c active" id="dropbtn">Wallet</button>
+                               <button class="btn-c " id="dropbtn1">Other Method</button>
+                     </div>
+                     <div class="wallet-list-c1" id="wallet1">
+                           <div class="symbol-c">
+                               <p>NGN </p>  <span> &#x20A6;</span> <input type="checkbox" name="" id="">
+                           </div> 
+                           <div class="symbol-c"> <p>USD</p> <span>  $</span><input type="checkbox" name="" id=""></div>   
+                           <div class="symbol-c"><p>EURO</p> <span>  &#x20AC;</span><input type="checkbox" name="" id=""></div>   
+                           <div class="symbol-c"> <p>ZAR</p> <span>R</span><input type="checkbox" name="" id=""></div>   
+                           <div class="symbol-c"><p>GHC</p> <span>  &#8373;</span><input type="checkbox" name="" id=""></div>   
+                          
+                        
+                               
+                                
+                     </div>
+                     <div class="wallet-list1-c" id="wallet2">
+                           <div class="symbol-c">
+                               <p>BANK </p> <input type="checkbox" name="" id="">
+                           </div> 
+                           <div class="symbol-c"> <p>CHIPPER CASH</p><input type="checkbox" name="" id=""></div>   
+                           <div class="symbol-c"><p>MOBILE MONEY</p><input type="checkbox" name="" id=""></div>   
+                           <div class="symbol-c"> <p>PI NETWORK</p><input type="checkbox" name="" id=""></div>   
+                           <div class="symbol-c"><p>PAYPAL</p> <input type="checkbox" name="" id=""></div>   
+                           <div class="symbol-c"><p>SKRILL</p> <input type="checkbox" name="" id=""></div>   
+                           <div class="symbol-c"><p>APPLEPAY</p> <input type="checkbox" name="" id=""></div>   
+                           <div class="symbol-c"><p>CASH APP</p> <input type="checkbox" name="" id=""></div>   
+                           <div class="symbol-c"><p>GOGGLEPAY</p> <input type="checkbox" name="" id=""></div>   
+                          
+                        
+                               
+                                
+                     </div>
+                     <div class="post-btn">
+                       <button class="btn-1">POST</button>
+ 
+                     </div>
+ 
+           </div>
+    </main>
+  </section>
+  <section>
+
+    <main  >
+      
+           <div class="content-c" id="sell" style="display: none;">
+                     <div class="currency-c">
+                               <div class="assest-c">
+                                         <div class="labe1-c">
+                                                   <label for="">currency:</label> &nbsp;&nbsp;&nbsp;
+                                                   <select>
+                                                     <option value="jyguyg">USD</option>
+                                                     <option value="jyguyg">NGN</option>
+                                                     <option value="jyguyg">GPB</option>
+                                                     <option value="jyguyg">GHC</option>
+                                                     <option value="jyguyg">ZAR</option>
+                                                   </select>
+                                                 </div>
+                               </div>
+                               <p>To Sell</p>
+                               <div class="assest1-c">
+                                         <div class="labe1-c">
+                                                   <label for="">Fiat:</label> &nbsp;&nbsp;&nbsp;
+                                                   <select>
+                                                     <option value="jyguyg">USD</option>
+                                                     <option value="jyguyg">NGN</option>
+                                                     <option value="jyguyg">GPB</option>
+                                                     <option value="jyguyg">GHC</option>
+                                                     <option value="jyguyg">ZAR</option>
+                                                   </select>
+                                                 </div>
+                               </div>
+                     </div>
+                     <div class="value-c">
+                               <div class="price-c">
+                                         <label for="">Your Rate</label> 
+                                         <input type="tel">
+                               </div>
+                               <div class="rate-c">
+                                         <label for="">Market Rate</label> 
+                                         <input type="tel" value="$1/&#x20A6;750">
+                               </div>
+                     </div>
+                     <div class="trade-ammount-c">
+ 
+                               <div class="ammount-c">
+                                         <label for="">Total Amount To Sell</label> 
+                                         <input type="tel" name="" id="" placeholder="$">
+                               </div>
+                               <div class="swap-c">
+                                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                               </div>
+                               <div class="ammount-c" style="margin-right: -2rem;">
+                                         <label for="">Total Amount To Receive</label> 
+                                         <input type="tel" name="" id="" placeholder="&#x20A6;">
+                               </div>
+                     </div>
+                     <div class="order-limit-c">
+                               <div class="lowest-order-c">
+                                         <input type="tel" placeholder="Lowest Limit">
+                               </div>
+                               <div class="swap-c">
+                                         <i class="fa-solid fa-shuffle"></i>
+                               </div>
+                               <div class="highest-order-c">
+                                         <input type="tel" placeholder="Highest Limit">
+                               </div>
+                     </div>
+                     <div class="payment-method-c">
+                               <button class="btn-c active" id="dropbtn3">Wallet</button>
+                               <button class="btn-c " id="dropbtn4">Other Method</button>
+                     </div>
+                     <div class="wallet-list-c1" id="wallet3">
+                           <div class="symbol-c">
+                               <p>NGN </p>  <span> &#x20A6;</span> <input type="checkbox" name="" id="">
+                           </div> 
+                           <div class="symbol-c"> <p>USD</p> <span>  $</span><input type="checkbox" name="" id=""></div>   
+                           <div class="symbol-c"><p>EURO</p> <span>  &#x20AC;</span><input type="checkbox" name="" id=""></div>   
+                           <div class="symbol-c"> <p>ZAR</p> <span>R</span><input type="checkbox" name="" id=""></div>   
+                           <div class="symbol-c"><p>GHC</p> <span>  &#8373;</span><input type="checkbox" name="" id=""></div>   
+                          
+                        
+                               
+                                
+                     </div>
+                     <div class="wallet-list1-c" id="wallet4">
+                           <div class="symbol-c">
+                               <p>BANK </p> <input type="checkbox" name="" id="">
+                           </div> 
+                           <div class="symbol-c"> <p>CHIPPER CASH</p><input type="checkbox" name="" id=""></div>   
+                           <div class="symbol-c"><p>MOBILE MONEY</p><input type="checkbox" name="" id=""></div>   
+                           <div class="symbol-c"> <p>PI NETWORK</p><input type="checkbox" name="" id=""></div>   
+                           <div class="symbol-c"><p>PAYPAL</p> <input type="checkbox" name="" id=""></div>   
+                           <div class="symbol-c"><p>SKRILL</p> <input type="checkbox" name="" id=""></div>   
+                           <div class="symbol-c"><p>APPLEPAY</p> <input type="checkbox" name="" id=""></div>   
+                           <div class="symbol-c"><p>CASH APP</p> <input type="checkbox" name="" id=""></div>   
+                           <div class="symbol-c"><p>GOGGLEPAY</p> <input type="checkbox" name="" id=""></div>   
+                          
+                        
+                               
+                                
+                     </div>
+                     <div class="post-btn">
+                       <button class="btn-1">POST</button>
+ 
+                     </div>
+ 
+           </div>
+    </main>
+  </section>
+
+
+<script>
+const walletbtn3 = document.getElementById("dropbtn3");
+const walletbtn4 = document.getElementById("dropbtn4");
+
+
+const wallet3 = document.getElementById("wallet3");
+const wallet4 = document.getElementById("wallet4");
+
+
+
+
+walletbtn3.addEventListener("click", function(){
+  walletbtn3.classList.add("active");
+  walletbtn4.classList.remove("active");
+  wallet3.style.display ="block";
+  wallet4.style.display = "none";
+});
+
+walletbtn4.addEventListener("click", function(){
+  walletbtn4.classList.add("active");
+  walletbtn3.classList.remove("active");
+  wallet3.style.display ="none";
+  wallet4.style.display = "block";
+});
+
+const walletbtn = document.getElementById("dropbtn");
+const walletbtn1 = document.getElementById("dropbtn1");
+
+
+const wallet1 = document.getElementById("wallet1");
+const wallet2 = document.getElementById("wallet2");
+
+
+
+
+walletbtn.addEventListener("click", function(){
+  walletbtn.classList.add("active");
+  walletbtn1.classList.remove("active");
+  wallet1.style.display ="block";
+  wallet2.style.display = "none";
+});
+
+walletbtn1.addEventListener("click", function(){
+  walletbtn1.classList.add("active");
+  walletbtn.classList.remove("active");
+  wallet1.style.display ="none";
+  wallet2.style.display = "block";
+});
+
+
+
+
+const buycbtn = document.getElementById("buyc");
+const buycbtn1 = document.getElementById("buyc1");
+const buy  = document.getElementById("buy");
+const sell = document.getElementById("sell");
+
+buycbtn.addEventListener("click", function(){
+  buycbtn.classList.add("active");
+  buycbtn1.classList.remove("active");
+  buy.style.display = "block";
+  sell.style.display = "none";
+});
+
+buycbtn1.addEventListener("click", function(){
+  buycbtn1.classList.add("active");
+  buycbtn.classList.remove("active");
+  buy.style.display = "none";
+  sell.style.display = "block";
+});
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+          
+</body>
+</html>

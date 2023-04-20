@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <link rel="stylesheet" href="addfunds.css">
+          <link rel="stylesheet" href="./color.css">
+          <link rel="stylesheet" href="./button.css">
+       
+</head>
+<body>
+
+<div class="add-payment-method">
+          <div class="add-payment-method-head">
+                    <h2>CHOOSE PAYMENT INFO</h2>
+          </div>
+<div class="select-wallet-button">
+
+          <div class="p2p">
+                    <button id="Buy1" class="active pick-btn">NGN</button>
+                    <button id="Buy2" class="pick-btn">GHC</button>
+                    <button id="Buy3" class="pick-btn">USA</button>
+                    <button id="Buy4" class="pick-btn">ZAR</button>
+                    <button id="Buy5" class="pick-btn">GPB</button>
+                  </div>
+</div>
+       
+</div>
+
+<div class="add-payment-method-ngn" id="ngnMethod">
+<div class="select-detail">
+          <div class="slect-bank-ngn">
+                    <button type="submit" id="ngnBankbtn">Add Bank</button> <br>
+                    <button type="submit" id="ngnChipperbtn">Add Chipper</button> <br>
+                    <button type="submit" id="ngnPibtn">Add Pi Network</button>
+          </div>
+</div>
+<div class="ngn-detail-form">
+
+          <form class="ngnbank" id="ngnbank">
+                    <h2>BANK DETAILS</h2>
+                 
+                              <label for="bank-name">Bank Name:</label>
+                              <select id="bank-name" name="bank-name" required>
+                                <option value="">Select Bank</option>
+                                <option value="Access Bank">Access Bank</option>
+                                <option value="Citibank Nigeria">Citibank Nigeria</option>
+                                <option value="Ecobank Nigeria">Ecobank Nigeria</option>
+                                <option value="Fidelity Bank Nigeria">Fidelity Bank Nigeria</option>
+                                <option value="First Bank of Nigeria">First Bank of Nigeria</option>
+                                <option value="First City Monument Bank">First City Monument Bank</option>
+                                <option value="Guaranty Trust Bank">Guaranty Trust Bank</option>
+                                <option value="Heritage Bank Plc">Heritage Bank Plc</option>
+                                <option value="Keystone Bank Limited">Keystone Bank Limited</option>
+                                <option value="Polaris Bank">Polaris Bank</option>
+                                <option value="Stanbic IBTC Bank Nigeria Limited">Stanbic IBTC Bank Nigeria Limited</option>
+                                <option value="Standard Chartered Bank">Standard Chartered Bank</option>
+                                <option value="Sterling Bank">Sterling Bank</option>
+                                <option value="Union Bank of Nigeria">Union Bank of Nigeria</option>
+                                <option value="United Bank for Africa">United Bank for Africa</option>
+                                <option value="Unity Bank Plc">Unity Bank Plc</option>
+                                <option value="Wema Bank">Wema Bank</option>
+                                <option value="Zenith Bank">Zenith Bank</option>
+                                <option value=" Other Banks"> Other Banks</option>
+                              </select>
+                            
+                              <label for="branch-name">Bank Name:</label>
+                              <input type="text" id="branch-name" name="branch-name" required placeholder="Please enter other banks name here ">
+
+                              <label for="branch-name">Branch Name:</label>
+                              <input type="text" id="branch-name" name="branch-name" required>
+                            
+                            
+                            
+                              <label for="account-number">Account Number:</label>
+                              <input type="text" id="account-number" name="account-number" required>
+                            
+                              <label for="account-type">Account Type:</label>
+                              <select id="account-type" name="account-type" required>
+                                <option value="">Select Account Type</option>
+                                <option value="current">Current</option>
+                                <option value="savings">Savings</option>
+                              </select>
+                            
+                              <label for="name-on-account">Name on Account:</label>
+                              <input type="text" id="name-on-account" name="name-on-account" required>
+                            
+                              <input type="submit" value="Submit">
+                          
+                  </form>
+          <form class="ngnChipper" id="ngnChipper">
+                    <h2>CHIPPER CASH DETAILS</h2>
+                    <label for="account-number">GMAIL:</label>
+                    <input type="email" id="account-number" name="account-number" required><br><br>
+                    
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    
+                    <label for="bank-name">UserName:</label>
+                    <input type="text" id="bank-name" name="bank-name" required><br><br>
+                    
+                   
+                    
+                    <input type="submit" value="Submit">
+                  </form>
+          <form class="ngnPi" id="ngnPi">
+                    <h2>PI NETWORK DETAILS</h2>
+                  
+                    
+                    <label for="name">Wallet Address:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    
+                 
+                    
+                   
+                    
+                    <input type="submit" value="Submit">
+                  </form>
+</div>
+</div>
+<div class="add-payment-method-ghs" id="ghsMethod">
+          <div class="select-detail">
+                    <div class="slect-bank-ngn">
+                              <button type="submit" id="ghsBankbtn">Add Bank</button> <br>
+                              <button type="submit" id="ghsMobilebtn">Add Mobile Money</button> <br>
+                              <button type="submit" id="ghsPibtn">Add Pi Network</button>
+                    </div>
+          </div>
+          <form class="ghsMobile" id="ghsMobile">
+                    <h2>MOBILE MONEY</h2>
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br><br>
+                  
+                    <label for="mobile-money-provider">Mobile Money Provider:</label>
+                    <select id="mobile-money-provider" name="mobile-money-provider" required>
+                      <option value="">Select a Provider</option>
+                      <option value="MTN">MTN</option>
+                      <option value="Vodafone">Vodafone</option>
+                      <option value="AirtelTigo">AirtelTigo</option>
+                    </select>
+                  
+                    <label for="name">Phone  Number:</label>
+                    <input type="text" id="Phone Number" name="Phone Number" required><br><br>
+                  
+                    <input type="submit" value="Submit">
+                  </form>
+                  <form class="ghsBank" id="ghsBank">
+                    <h2>BANK DETAILS</h2>
+
+                    <label for="bank-name">Bank Name:</label>
+                    <select id="bank-name" name="bank-name" required>
+                      <option value="">Select Bank</option>
+                      <option value="Access Bank Ghana">Access Bank Ghana</option>
+                      <option value="ADB Bank">ADB Bank</option>
+                      <option value="Bank of Africa">Bank of Africa</option>
+                      <option value="Barclays Bank">Barclays Bank</option>
+                      <option value="Cal Bank">Cal Bank</option>
+                      <option value="Ecobank Ghana">Ecobank Ghana</option>
+                      <option value="FBNBank Ghana">FBNBank Ghana</option>
+                      <option value="GCB Bank">GCB Bank</option>
+                      <option value="GTBank Ghana">GTBank Ghana</option>
+                      <option value="Heritage Bank Ghana">Heritage Bank Ghana</option>
+                      <option value="Republic Bank Ghana">Republic Bank Ghana</option>
+                      <option value="Stanbic Bank Ghana">Stanbic Bank Ghana</option>
+                      <option value="Standard Chartered Bank Ghana">Standard Chartered Bank Ghana</option>
+                      <option value="UMB Bank">UMB Bank</option>
+                      <option value="UniBank Ghana">UniBank Ghana</option>
+                      <option value="Zenith Bank Ghana">Zenith Bank Ghana</option>
+                      <option value="Other Banks">Other Banks</option>
+                    </select>
+                  
+                    <label for="branch-name">Bank Name:</label>
+                    <input type="text" id="branch-name" name="branch-name" required placeholder="Please enter other banks name here ">
+                    <label for="branch-name">Branch Name:</label>
+                    <input type="text" id="branch-name" name="branch-name" required>
+                  
+                  
+                  
+                    <label for="account-number">Account Number:</label>
+                    <input type="text" id="account-number" name="account-number" required>
+                  
+                    <label for="account-type">Account Type:</label>
+                    <select id="account-type" name="account-type" required>
+                      <option value="">Select Account Type</option>
+                      <option value="checking">Checking</option>
+                      <option value="savings">Savings</option>
+                    </select>
+                  
+                    <label for="name-on-account">Name on Account:</label>
+                    <input type="text" id="name-on-account" name="name-on-account" required>
+                  
+                    <input type="submit" value="Submit">
+                            </form>
+                            <form class="ghsPi" id="ghsPi">
+                              <h2>PI NETWORK DETAILS</h2>
+                            
+                              
+                              <label for="name">Wallet Address:</label>
+                              <input type="text" id="name" name="name" required><br><br>
+                              
+                           
+                              
+                             
+                              
+                              <input type="submit" value="Submit">
+                            </form>
+</div>
+
+<div class="add-payment-method-usa" id="usaMethod">
+          <div class="select-detail">
+                    <div class="slect-bank-ngn">
+                              <button type="submit" id="usaBankbtn">Add Bank</button> <br>
+                              <button type="submit" id="usaPaypalbtn">Add Paypal</button> <br>
+                              <button type="submit" id="usaPibtn">Add Pi Network</button>
+                    </div>
+          </div>
+          <form class="usaBank" id="usaBank">
+                    <h2>BANK DETAILS</h2>
+
+                    <label for="bank-name">Bank Name:</label>
+                    <select id="bank-name" name="bank-name" required>
+                      <option value="">Select Bank</option>
+                      <option value="Bank of America">Bank of America</option>
+                      <option value="JPMorgan Chase">JPMorgan Chase</option>
+                      <option value="Wells Fargo">Wells Fargo</option>
+                      <option value="Citibank">Citibank</option>
+                      <option value="US Bank">US Bank</option>
+                      <option value="PNC Bank">PNC Bank</option>
+                      <option value="Capital One">Capital One</option>
+                      <option value="TD Bank">TD Bank</option>
+                      <option value="SunTrust">SunTrust</option>
+                      <option value="BB&T">BB&T</option>
+                      <option value="KeyBank">KeyBank</option>
+                      <option value="Regions Bank">Regions Bank</option>
+                      <option value="Fifth Third Bank">Fifth Third Bank</option>
+                      <option value="Huntington Bank">Huntington Bank</option>
+                      <option value="M&T Bank">M&T Bank</option>
+                      <option value="Santander Bank">Santander Bank</option>
+                      <option value="Comerica Bank">Comerica Bank</option>
+                      <option value="BBVA USA">BBVA USA</option>
+                      <option value="City National Bank">City National Bank</option>
+                      <option value="First Citizens Bank">First Citizens Bank</option>
+                      <option value="Other Banks">Other Banks</option>
+
+                    </select>
+                    <label for="branch-name">Bank Name:</label>
+                    <input type="text" id="branch-name" name="branch-name" required placeholder="Please enter other banks name here ">
+                    <label for="branch-name">Branch Name:</label>
+                    <input type="text" id="branch-name" name="branch-name" required>
+                  
+                    <label for="routing-number">Routing Number:</label>
+                    <input type="text" id="routing-number" name="routing-number" required>
+                  
+                    <label for="account-number">Account Number:</label>
+                    <input type="text" id="account-number" name="account-number" required>
+                  
+                    <label for="account-type">Account Type:</label>
+                    <select id="account-type" name="account-type" required>
+                      <option value="">Select Account Type</option>
+                      <option value="checking">Checking</option>
+                      <option value="savings">Savings</option>
+                    </select>
+                  
+                    <label for="name-on-account">Name on Account:</label>
+                    <input type="text" id="name-on-account" name="name-on-account" required>
+                  
+                    <input type="submit" value="Submit">
+          </form>
+
+          <form class="usaPaypal" id="usaPaypal">
+                    <h2>PAYPAL DETAILS</h2>
+                    <label for="account-number">GMAIL:</label>
+                    <input type="email" id="account-number" name="account-number" required><br><br>
+                    
+                   
+                    
+                   
+                    
+                    <input type="submit" value="Submit">
+                  </form>
+
+          <form class="usaPi" id="usaPi">
+                    <h2>PI NETWORK DETAILS</h2>
+                  
+                    
+                    <label for="name">Wallet Address:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    
+                 
+                    
+                   
+                    
+                    <input type="submit" value="Submit">
+                  </form>
+
+</div>
+
+<div class="add-payment-method-sa" id="saMethod">
+          <div class="select-detail">
+                    <div class="slect-bank-ngn">
+                              <button type="submit" id="saBankbtn">Add Bank</button> <br>
+                              <button type="submit" id="saPaypalbtn">Add Paypal</button> <br>
+                              <button type="submit" id="saPibtn">Add Pi Network</button>
+                    </div>
+          </div>
+          <form class="saBank" id="saBank">
+                    <h2>BANK DETAILS</h2>
+
+                    <label for="bank-name">Bank Name:</label>
+                    <select id="bank-name" name="bank-name" required>
+                      <option value="">Select Bank</option>
+                      <option value="Absa Bank">Absa Bank</option>
+                      <option value="African Bank">African Bank</option>
+                      <option value="Bidvest Bank">Bidvest Bank</option>
+                      <option value="Capitec Bank">Capitec Bank</option>
+                      <option value="First National Bank (FNB)">First National Bank (FNB)</option>
+                      <option value="Nedbank">Nedbank</option>
+                      <option value="Standard Bank">Standard Bank</option>
+                      <option value="Investec Bank">Investec Bank</option>
+                      <option value="Discovery Bank">Discovery Bank</option>
+                      <option value="TymeBank">TymeBank</option>
+                      <option value="Bank of Athens">Bank of Athens</option>
+                      <option value="Bank Zero">Bank Zero</option>
+                      <option value="Postbank">Postbank</option>
+                      <option value="Other Banks">Other Banks</option>
+
+                    </select>
+                  
+                    <label for="branch-name">Bank Name:</label>
+                    <input type="text" id="branch-name" name="branch-name" required placeholder="Please enter other banks name here ">
+
+                    <label for="branch-name">Branch Name:</label>
+                    <input type="text" id="branch-name" name="branch-name" required>
+                  
+                    <label for="routing-number">Branch Code:</label>
+                    <input type="text" id="routing-number" name="routing-number" required>
+                  
+                    <label for="account-number">Account Number:</label>
+                    <input type="text" id="account-number" name="account-number" required>
+                  
+                    <label for="account-type">Account Type:</label>
+                    <select id="account-type" name="account-type" required>
+                      <option value="">Select Account Type</option>
+                      <option value="cheque">Cheque</option>
+                      <option value="savings">Savings</option>
+                    </select>
+                  
+                    <label for="name-on-account">Name on Account:</label>
+                    <input type="text" id="name-on-account" name="name-on-account" required>
+                  
+                    <input type="submit" value="Submit">
+                  </form>
+
+                  
+          <form class="saPaypal" id="saPaypal">
+                    <h2>PAYPAL DETAILS</h2>
+                    <label for="account-number">GMAIL:</label>
+                    <input type="email" id="account-number" name="account-number"><br><br>
+                    
+                   
+                    
+                   
+                    
+                    <input type="submit" value="Submit">
+                  </form>
+
+          <form class="saPi" id="saPi">
+                    <h2>PI NETWORK DETAILS</h2>
+                  
+                    
+                    <label for="name">Wallet Address:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    
+                 
+                    
+                   
+                    
+                    <input type="submit" value="Submit">
+                  </form>
+
+</div>
+
+<div class="add-payment-method-uk" id="ukMethod">
+          <div class="select-detail">
+                    <div class="slect-bank-ngn">
+                              <button type="submit" id="ukBankbtn">Add Bank</button> <br>
+                              <button type="submit" id="ukPaypalbtn">Add Paypal</button> <br>
+                              <button type="submit" id="ukPibtn">Add Pi Network</button>
+                    </div>
+          </div>
+          <form class="ukBank" id="ukBank">
+                    <h2>BANK DETAILS</h2>
+
+                    <label for="bank-name">Bank Name:</label>
+                    <select id="bank-name" name="bank-name" required>
+                      <option value="">Select Bank</option>
+                      <option value="Barclays">Barclays</option>
+                      <option value="HSBC">HSBC</option>
+                      <option value="Lloyds Bank">Lloyds Bank</option>
+                      <option value="NatWest">NatWest</option>
+                      <option value="Royal Bank of Scotland">Royal Bank of Scotland</option>
+                      <option value="Santander">Santander</option>
+                      <option value="TSB">TSB</option>
+                      <option value="Bank of Scotland">Bank of Scotland</option>
+                      <option value="Co-operative Bank">Co-operative Bank</option>
+                      <option value="First Direct">First Direct</option>
+                      <option value="Halifax">Halifax</option>
+                      <option value="Metro Bank">Metro Bank</option>
+                      <option value="Nationwide">Nationwide</option>
+                      <option value="Virgin Money">Virgin Money</option>
+                      <option value="Other Banks">Other Banks</option>
+
+                    </select>
+                  
+                    <label for="branch-name">Bank Name:</label>
+                    <input type="text" id="branch-name" name="branch-name" required placeholder="Please enter other banks name here ">
+
+                    <label for="sort-code">Sort Code:</label>
+                    <input type="text" id="sort-code" name="sort-code" required>
+                  
+                    <label for="account-number">Account Number:</label>
+                    <input type="text" id="account-number" name="account-number" required>
+                  
+                    <label for="account-type">Account Type:</label>
+                    <select id="account-type" name="account-type" required>
+                      <option value="">Select Account Type</option>
+                      <option value="current">Current</option>
+                      <option value="savings">Savings</option>
+                    </select>
+                  
+                    <label for="name-on-account">Name on Account:</label>
+                    <input type="text" id="name-on-account" name="name-on-account" required>
+                  
+                    <input type="submit" value="Submit">
+                  </form>
+                  <form class="ukPaypal" id="ukPaypal">
+                    <h2>PAYPAL DETAILS</h2>
+                    <label for="account-number">GMAIL:</label>
+                    <input type="email" id="account-number" name="account-number" required><br><br>
+                    
+                   
+                    
+                   
+                    
+                    <input type="submit" value="Submit">
+                  </form>
+
+          <form class="ukPi" id="ukPi">
+                    <h2>PI NETWORK DETAILS</h2>
+                  
+                    
+                    <label for="name">Wallet Address:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    
+                 
+                    
+                   
+                    
+                    <input type="submit" value="Submit">
+                  </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+<script>
+
+
+
+
+const btn0 = document.getElementById("Buy1")
+const btn11 = document.getElementById("Buy2")
+const btn3 = document.getElementById("Buy3")
+const btn4 = document.getElementById("Buy4")
+const btn5 = document.getElementById("Buy5")
+const ngnbankdshow = document.getElementById("ngnBankbtn");
+const ngnChipperbtn =document.getElementById("ngnChipperbtn");
+const ngnPibtn = document.getElementById("ngnPibtn");
+const ngn = document.getElementById("ngnMethod");
+const ghs = document.getElementById("ghsMethod");
+const usa = document.getElementById("usaMethod");
+const sa = document.getElementById("saMethod");
+const uk = document.getElementById("ukMethod");
+
+const ngnbank = document.getElementById("ngnbank");
+const ngnChipper = document.getElementById("ngnChipper")
+const ngnPi = document.getElementById("ngnPi")
+
+const usaBankbtn = document.getElementById("usaBankbtn");
+const usaPaypalbtn = document.getElementById("usaPaypalbtn");
+const usaPibtns = document.getElementById("usaPibtn");
+const usaBank = document.getElementById("usaBank");
+const usaPaypal = document.getElementById("usaPaypal");
+const usaPi = document.getElementById("usaPi");
+
+
+const saBankbtn = document.getElementById("saBankbtn");
+const saPaypalbtn = document.getElementById("saPaypalbtn");
+const saPibtn = document.getElementById("saPibtn");
+
+const saBank = document.getElementById("saBank");
+const saPaypal = document.getElementById("saPaypal");
+const saPi = document.getElementById("saPi");
+
+const ukBankbtn = document.getElementById("ukBankbtn");
+const ukPaypalbtn = document.getElementById("ukPaypalbtn");
+const ukPibtn = document.getElementById("ukPibtn");
+
+const ukBank = document.getElementById("ukBank");
+const ukPaypal = document.getElementById("ukPaypal");
+const ukPi = document.getElementById("ukPi");
+
+
+ukBankbtn.addEventListener("click", function(){
+          ukBank.style.display = "block";
+          ukPaypal.style.display = "none";
+          ukPi.style.display = "none";
+});
+
+ukPaypalbtn.addEventListener("click", function(){
+          ukPaypal.style.display = "block";
+          ukBank.style.display = "none";
+          ukPi.style.display = "none";
+});
+
+ukPibtn.addEventListener("click", function(){
+          ukPi.style.display = "block";
+          ukBank.style.display = "none";
+          ukPaypal.style.display = "none";
+});
+
+
+
+saBankbtn.addEventListener("click", function(){
+          saBank.style.display = "block";
+          saPaypal.style.display = "none";
+          saPi.style.display = "none";
+});
+saPaypalbtn.addEventListener("click", function(){
+          saPaypal.style.display = "block";
+          saBank.style.display = "none";
+          saPi.style.display = "none";
+})
+saPibtn.addEventListener("click", function(){
+          saPi.style.display = "block";
+          saBank.style.display = "none";
+          saPaypal.style.display = "none";
+})
+
+usaBankbtn.addEventListener("click", function(){
+          usaBank.style.display = "block";
+          usaPi.style.display = "none";
+          usaPaypal.style.display = "none";
+});
+usaPaypalbtn.addEventListener("click", function(){
+          usaPaypal.style.display = "block";
+          usaBank.style.display = "none";
+          usaPi.style.display = "none";
+});
+usaPibtns.addEventListener("click", function(){
+          usaPi.style.display = "block";
+          usaBank.style.display = "none";
+          usaPaypal.style.display = "none";
+});
+
+// nigeria btn
+ngnbankdshow.addEventListener("click", function(){
+          ngnbank.style.display = "block";
+          ngnChipper.style.display = "none";
+          ngnPi.style.display ="none";
+
+});
+
+ngnChipperbtn.addEventListener("click", function(){
+ngnChipper.style.display = "block";
+ngnbank.style.display = "none";
+ngnPi.style.display ="none";
+});
+
+ngnPibtn.addEventListener("click", function(){
+ngnPi.style.display ="block";
+ngnbank.style.display = "none";
+ngnChipper.style.display = "none";
+});
+
+
+// close nigeria btn
+
+
+// ghana btn
+
+const ghsBankbtn = document.getElementById("ghsBankbtn");
+const ghsMobilebtn = document.getElementById("ghsMobilebtn");
+const ghsPibtn = document.getElementById("ghsPibtn");
+const ghsBank = document.getElementById("ghsBank");
+const ghsMobile = document.getElementById("ghsMobile");
+const ghsPi = document.getElementById("ghsPi");
+
+
+
+ghsBankbtn.addEventListener("click", function(){
+ghsBank.style.display = "block";
+ghsMobile.style.display = "none";
+ghsPi.style.display = "none";
+}); 
+
+ghsMobilebtn.addEventListener("click", function(){
+          ghsMobile.style.display = "block";
+          ghsBank.style.display = "none";
+          ghsPi.style.display = "none";
+});
+
+ghsPibtn.addEventListener("click", function(){
+ghsPi.style.display = "block";
+ghsMobile.style.display = "none";
+ghsBank.style.display = "none";
+});
+
+
+
+// usa btn
+
+
+
+
+
+
+
+
+
+
+btn0.addEventListener("click", function() {
+  btn0.classList.add("active");
+  btn11.classList.remove("active");
+  btn3.classList.remove("active");
+  btn4.classList.remove("active");
+  btn5.classList.remove("active");
+  ngn.style.display = "block";
+  ghs.style.display = "none";
+  usa.style.display = "none";
+  sa.style.display = "none";
+  uk.style.display = "none";
+
+
+
+});
+btn11.addEventListener("click", function() {
+  btn11.classList.add("active");
+  btn0.classList.remove("active");
+  btn3.classList.remove("active");
+  btn4.classList.remove("active");
+  btn5.classList.remove("active");
+  ngn.style.display = "none";
+  ghs.style.display = "block";
+  usa.style.display = "none";
+  sa.style.display = "none";
+  uk.style.display = "none";
+ 
+});
+btn3.addEventListener("click", function() {
+  btn3.classList.add("active");
+  btn0.classList.remove("active");
+  btn11.classList.remove("active");
+  btn4.classList.remove("active");
+  btn5.classList.remove("active");
+  ngn.style.display = "none";
+  ghs.style.display = "none";
+  usa.style.display = "block";
+  sa.style.display = "none";
+  uk.style.display = "none";
+
+});
+btn4.addEventListener("click", function() {
+  btn4.classList.add("active");
+  btn11.classList.remove("active");
+  btn0.classList.remove("active");
+  btn3.classList.remove("active");
+  btn5.classList.remove("active");
+  ngn.style.display = "none";
+  ghs.style.display = "none";
+  usa.style.display = "none";
+  sa.style.display = "block";
+  uk.style.display = "none";
+});
+btn5.addEventListener("click", function() {
+  btn5.classList.add("active");
+  btn11.classList.remove("active");
+  btn0.classList.remove("active");
+  btn3.classList.remove("active");
+  btn4.classList.remove("active");
+  ngn.style.display = "none";
+  ghs.style.display = "none";
+  usa.style.display = "none";
+  sa.style.display = "none";
+  uk.style.display = "block";
+});
+
+
+
+
+
+
+</script>
+</html>

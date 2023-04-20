@@ -1,0 +1,276 @@
+*{
+          padding: 0;
+          margin: 0;
+}
+body{
+     background-color: var(--body);     
+}
+
+
+.head-content-c{
+          /* border: 2px solid black; */
+          display: flex;
+          justify-content: space-around;
+          padding: 2rem;
+}
+.btn-c{
+         background-color: var(--white);
+         border: none;
+         padding: 1rem 2.5rem;
+         cursor: pointer;
+
+}
+.btn-1{
+         background-color: var(--main-color);
+         color: var(--white);
+         border: none;
+         padding: 1rem 2.5rem;
+         cursor: pointer;
+          border-radius: .47rem;
+}
+main {
+          /* border: 2px solid green; */
+          padding: 1rem;
+          display: flex;
+          justify-content: center;
+
+}
+
+
+#buy{
+  background-color: var(--white);
+  width: 50%;
+  margin: 1rem 0;
+}
+.content-c{
+          /* border: 3px solid red; */
+          background-color: var(--white);
+          padding: 1rem;
+          width: 50%;
+}
+.currency-c{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+}
+.currency-c select {
+          padding: 10px 60px;
+          font-size: 16px;
+          border: none;
+          border-radius: 5px;
+          background-color: var(--select);
+          color: #333;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          margin: 1rem 0;
+          outline: none;
+        }
+        
+        .label1-c   select:focus {
+          outline: none;
+        }
+        
+        .label1-c  select option {
+          background-color: var(--white);
+          color: #333;
+          font-size: 1.3rem;
+          
+        }
+        .label1-c  select option:hover{
+          background: var(--main-color);
+          color: var(--white);
+        }
+        
+        .label1-c  select option:checked {
+          background-color: var(--main-color);
+          color: var(--white);
+        }
+      .content-c   input{
+          padding: .4rem;
+          background-color: var(--input);
+          border: none;
+          outline: none;
+          border-radius: .47rem;
+          text-align: center;
+          font-size: 1rem;
+          margin: 0;
+          width: 40%;
+}
+.content-c input:focus{
+  border-bottom: 1px solid var(--main-color);
+}
+.value-c{
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          margin: 2rem 0;
+          /* border: 2px solid black; */
+}
+.rate-c{
+          margin-right: -4rem;
+}
+.trade-ammount-c{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+}
+.swap-c{
+          margin-right: 2rem;
+          font-size: .7rem;
+}
+.ammount-c{
+          text-align: left;
+}
+.order-limit-c{
+          display: flex;
+          justify-content: space-between;
+          margin: 1rem 0;
+          align-items: center;
+}
+.order-limit-c input{
+          width: 90%;
+}
+.wallet-list-c1{
+          /* border: 2px solid red; */
+          width: 15%;
+          margin: 1rem 0;
+          display: none;
+
+}
+.wallet-list1-c{
+          /* border: 2px solid red; */
+          width: 35%;
+          margin: 1rem 0;
+          display: none;
+
+}
+.active{
+  /* background-color: var(--main-color); */
+  border-bottom: 3px solid var(--main-color);
+}
+.symbol-c{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: .6rem 0;
+}
+.post-btn{
+  text-align: center;
+  margin: 1rem 0;
+}
+
+@media only screen and (max-width: 1000px){
+
+ 
+
+  main{
+    padding: 1rem ;
+    /* width: 100%; */
+    /* border: 2px solid black; */
+  }
+  .currency-c select{
+    width: 60%;
+    padding: .2rem;
+    font-size: 10px;
+    
+  }
+  .assest-c, .assest1-c{
+    margin: 1rem;
+    width: 100%;
+  }
+  .currency-c, .trade-ammount-c{
+    flex-direction: column;
+    padding: 0;
+  }
+  .head-content-c{
+    padding: 1rem;
+  }
+  .btn-c{
+    padding: 1rem 2rem;
+}
+.content-c{
+  width: 100%;
+  margin: 0 1rem;
+  padding: 1rem ;
+}
+.currency-c select {
+  padding: 1rem 0;
+  font-size: 16px;
+}
+#buy{
+  width: 100%;
+}
+.content-c   input{
+  width: 70%;
+}
+
+.trade-ammount-c{
+  justify-content: space-around;
+}
+.ammount-c{
+  margin: 1rem 0;
+  align-items: center;
+
+}
+.rate-c{
+  margin: 0;
+}
+.symbol-c p{
+  justify-content: center;
+  /* border: 2px solid red; */
+  width: 90%;
+}
+.wallet-list-c1{
+  width: 40%;
+}
+
+.wallet-list1-c{
+          /* border: 2px solid red; */
+          width: 85%;
+          margin: 1rem 0;
+          display: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

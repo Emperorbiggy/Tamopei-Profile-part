@@ -1,0 +1,130 @@
+*{
+          padding: 0;
+          margin: 0;
+}
+body{
+          text-align: center;
+          background-color: var(--body);
+          box-sizing: border-box;
+}
+.active{
+          border-bottom: 3px solid var(--main-color);
+}
+
+.ngnbank, .ngnChipper, .ngnPi{
+          display: none;
+}
+.ghsMobile, .ghsBank, .ghsPi{
+          display: none;
+}
+.usaBank, .usaPaypal, .usaPi{
+          display: none;
+}
+.saBank, .saPaypal, .saPi{
+          display: none;
+}
+.ukBank, .ukPaypal, .ukPi{
+          display: none;
+}
+.add-payment-method-ghs, .add-payment-method-usa, .add-payment-method-sa, .add-payment-method-uk {
+          display: none;
+}
+.add-payment-method-head{
+          background-color: var(--white);
+          margin: 1rem 0;
+}
+form {
+          margin: auto;
+          width: 50%;
+          border: 3px solid #f1f1f1;
+          padding: 10px;
+          background-color: var(--white);
+        }
+        form h2{
+          margin: 1rem 0;
+        }
+        label {
+          font-weight: bold;
+        }
+        
+        input[type=text] {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          box-sizing: border-box;
+          border: 2px solid #ccc;
+          border-radius: 4px;
+        }
+        
+        input[type=submit] {
+          background-color: #4CAF50;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+
+
+        form {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 20px;
+        }
+        
+        label, input, select {
+          margin-top: 10px;
+          font-size: 16px;
+        }
+        
+        input[type="number"], input[type="tel"], select {
+          width: 100%;
+          padding: 10px;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+        }
+        
+        button[type="submit"] {
+          margin-top: 20px;
+          padding: 10px 20px;
+          border-radius: 5px;
+          border: none;
+          background-color: #0072c6;
+          color: #fff;
+          font-size: 16px;
+          cursor: pointer;
+        }
+        
+        button[type="submit"]:hover {
+          background-color: #005ea2;
+        }
+
+
+        @media only screen and (max-width: 1000px){
+
+ *{
+  padding: 0;
+  margin: 0;
+ }
+
+form{
+  width: 80%;
+}
+
+
+
+
+
+
+
+        }
+  
+
+
+
+
